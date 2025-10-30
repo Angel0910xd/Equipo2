@@ -1,0 +1,418 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bennett</title>
+    <style>
+      body {
+            background-color: #01002D;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-image: url('img6.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+      }
+      header {
+        background-image: url('img7.jpg');
+        background-size: cover;
+        background-position: right 35% bottom 45%;
+        color: white; 
+        padding: 40px 20px;
+        margin-bottom: 20px;
+        background-attachment: fixed; 
+        border-radius: 15px;
+
+        /* Añadido para que sea un contenedor flex */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      /* Estilo para el botón cerrar sesión */
+      #logout-btn {
+          position: absolute;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: red;
+          color: white; 
+          border: 2px solid white;
+          padding: 5px 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+      }
+      #logout-btn:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+      }
+
+      .imagen-centrada {
+          display: block;
+          margin: 0 auto 20px;
+          border-radius: 15px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          transition: all 0.3s ease;
+      }
+      .imagen-centrada.grande {
+          width: 1000px; 
+      }
+      h1, p {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      img {
+         border-radius: 15px;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      nombre {
+          color: white;
+          font-size: 10px;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      h3 {
+          text-align: center; 
+          color: white;
+          margin-bottom: 10px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      p, ul, li {
+          margin-left: 20px;
+          margin-right: 20px;
+          color: #D1D1D1;
+          font-size: 18px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+          font-weight: normal;
+      }
+      .red { color: red }
+      .artefacto {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+      }
+      .artefacto-img {
+          width: 50px; height: 50px;
+          margin-right: 15px;
+          border-radius: 10px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      .info {
+          color: white;
+          font-size: 18px;
+      }
+      button {
+          background-color: transparent;
+          color: white; 
+          border: 2px solid white;
+          padding: 5px 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+      }
+      button:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="logout-btn" onclick="location.href='login.php'">Cerrar Sesión</button>
+        <h1>Bennett - Personaje pyro 4 estrellas</h1> 
+        <p class="nombre">Angel Daniel Ibarra Moreno 4B</p> 
+    </header>
+
+<section>
+            <h3 id="Bennett es un personaje jugable en Genshin Impact.">Descripcion del personaje</h3>
+            <p>Un huérfano descubierto por un anciano aventurero cuando era un bebé, Bennett se crio en el Gremio de Aventureros de Mondstadt. Él es el único miembro de la "Brigada de Benny", ya que todos los demás dejaron el equipo después de experimentar la desgracia constante que lo sigue.</p>
+            <ul>
+                <li><b>Apariencia:</b> Bennett es un joven que a menudo está cubierto de rasguños debido a sus diversas desventuras. Tiene el cabello rubio-ceniza claro, piel bronceada clara y ojos verdes brillantes, generalmente vistos con sus gafas en la cabeza. Tiene una cicatriz prominente en su hombro izquierdo y parece estar perpetuamente herido, resultado de nuevo debido a sus aventuras y su terrible suerte categorizada.</li><br>
+                <li><b>Perfil:</b> Los pocos jóvenes aventureros del Gremio de Aventureros de Mondstadt han sufrido desgracias insospechadas al salir de aventura con Bennett.
+<br>
+Él es el único miembro activo de su propio grupo de aventureros, conocido como la "Brigada de Benny", luego de que todos los demás miembros decidieron "ausentarse" después de una serie de calamidades. Como resultado, el equipo está actualmente a punto de ser disuelto.</li>
+            </ul>
+                                                                                               <img id="img2" src="img8.jpg" alt="Primera Imagen" width="700" class="imagen-centrada" onclick="agrandarImagen('img2')">
+
+    
+            <h3>Información de combate</h3>
+            <p>Talentos: </p>
+            <ol>
+                <li>
+                    <div class="artefacto">
+                        <img src="hab2.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Espada de la suerte</b> <br>
+			    Ataque normal
+                            <ul>
+                                <li><b>Ataque Normal:</b> Realiza hasta 5 ataques rápidos.</li>
+				<li><b>Ataque Cargado:</b> Consume una cierta cantidad de Aguante para lanzar un golpe de espada cruzado.</li>
+                                <li><b>Ataque Descendente:</b> Se lanza desde el aire para golpear el suelo, dañando a los enemigos cercanose infligiendo Daño en el AdE en el momento del impacto.</li>
+                                <ul>
+           <li>Tasa de Crítico</li>
+               <li>Daño Crítico</li>
+                   <li>ATK%</li>
+                     <li>Recarga de Energía</li>
+	 </ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+	<li>
+                    <div class="artefacto">
+                        <img src="hab1.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Sobrecarga de pasión</b> <br>
+			    Habilidad elemental
+				<p>Bennett concentra el espíritu aventurero y la energía Pyro en su espada. Dependiendo del tiempo de carga, se producen diferentes efectos.</p>
+                            <ul>
+                                <li><b>Pulsar una vez:</b> Realiza un rápido y ardiente movimiento con su espada, infligiendo Daño Pyro.</li>
+				<li><b>Mantener pulsado:</b> Dependiendo de la duración, lanza una habilidad distinta basada en en nivel de carga.</li>
+                                                                <ul>
+           <li>Carga 1: asesta dos golpes, infligiendo Daño Pyro y lanzando a los enemigos por los aires.</li>
+               <li>Carga 2: lanza 3 ataques consecutivos que infligen una cantidad significativa de Daño Pyro. El último ataque causa una explosión que lanza tanto a los enemigos como a Bennett por los aires. Sin embargo, Bennett no resulta herido por esta explosión.</li>
+
+	 </ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+	<li>
+                    <div class="artefacto">
+                        <img src="hab3.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Aventura maravillosa</b> <br>
+			    Habilidad definitiva
+				<p>Bennett salta y crea una explosión, infligiendo <span style="color: red;">Daño Pyro </span>y creando un círculo de apoyo moral.</p>
+                            <ul>
+                                <li><b>Círculo de apoyo moral:</b></li>
+                                      <ul>
+           <li>Si la Vida de un personaje dentro del círculo es igual o inferior al 70%, su vida se regenerará continuamente. La cantidad de vida regenerada aumenta en proporción a la Vida Máx. de Bennett.</li>
+               <li>Si la Vida de un personaje dentro del círculo es superior al 70%, obtendrá un Bono de ATQ en proporción al ATQ Básico de Bennett</li>
+	<li>Los personajes dentro del círculo serán <span style="color: red;"> afectados por Pyro.</span></li>
+
+	 </ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+<li>
+                    <div class="artefacto">
+                        <img src="hab4.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Resurgimiento de la pasión</b> <br>
+			    Pasivo 1
+				<p>Reduce en un 20% el TdE de <span style="color: red;">Sobrecarga de pasión</span>.</p>
+       	</div>
+ 	</div>
+ 	</li>
+<br><br><br><br><br>
+
+<li>
+                    <div class="artefacto">
+                        <img src="hab5.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Fervor intrépido</b> <br>
+			    Pasivo 2
+				<p>Dentro del área de<span style="color: red;"> Aventura maravillosa</span>, <span style="color: red;">Sobrecarga de pasión</span> tiene los siguientes efectos:</p>
+                            <ul>
+                                <li><b>Círculo de apoyo moral:</b></li>
+                                      <ul>
+           <li>Su TdE se reduce en un 50%.</li>
+               <li>Bennett no será lanzado por los aires con la Carga 2.</li>
+	
+
+	 </ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+<br><br><br>
+
+	
+	<li>
+                    <div class="artefacto">
+                        <img src="hab6.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Supuestamente seguro</b> <br>
+			    Pasivo 3
+				<p>Reduce en un 25% el tiempo necesario para completar una expedición en Mondstadt.</p>
+                            <ul>
+                                <li><b>Círculo de apoyo moral:</b></li>
+                                      <ul>
+           <li>Su TdE se reduce en un 50%.</li>
+               <li>Bennett no será lanzado por los aires con la Carga 2.</li>
+	
+
+	 </ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+
+
+
+
+	</ol>
+
+	
+<img id="img4" src="img10.jpg" alt="Segunda Imagen" width="300" class="imagen-centrada" onclick="agrandarImagen('img4')">
+
+
+    
+            <h3>Constelación</h3>
+            <p>Cada activación de constelación necesita un Stella Fortuna. </p>
+            <ol>
+                <li>
+                    <div class="artefacto">
+                        <img src="con.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Visión de aventura</b> <br>
+			    Constelación Niv. 1
+                            <ul>
+                                <li><b>El aumento de ATQ de<span style="color: red;"> Aventura maravillosa</span> ya no se ve restringido por la cantidad de Vida, y aumenta en un 20% adicional en proporción al ATQ Básico de Bennett.</li>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+                <li>
+                    <div class="artefacto">
+                        <img src="con2.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Huida desesperada</b> <br>
+			    Constelación Niv. 2
+                            <ul>
+                                <li><b>Aumenta la Recarga de Energía de Bennett en un 30% cuando su Vida es inferior al 70%.</li>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+                <li>
+                    <div class="artefacto">
+                        <img src="con3.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Pasión ardiente</b> <br>
+			    Constelación Niv. 3
+                            <ul>
+                                <li><b>Aumenta el nivel de habilidad de <span style="color: red;">Sobrecarga de pasión</span> +3.</li>
+				<li>Puede ser aumentado hasta Niv. 15.</li>
+
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+<li>
+                    <div class="artefacto">
+                        <img src="con4.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Calidez inagotable</b> <br>
+			    Constelación Niv. 4
+                            <ul>
+                                <li><b>Usar un Ataque Normal al ejecutar el segundo ataque de <span style="color: red;">Sobrecarga de pasión:</span> Carga 1 permite realizar un ataque adicional.</li>
+				<li>Este ataque adicional es equivalente al 135% del daño del segundo ataque.</li>
+
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+<li>
+                    <div class="artefacto">
+                        <img src="con5.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Explorador verdadero</b> <br>
+			    Constelación Niv. 5
+                            <ul>
+                                <li><b>Aumenta el nivel de habilidad de <span style="color: red;"> Aventura maravillosa</span> +3.</li>
+				<li>Puede ser aumentado hasta Niv. 15.</li>
+
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+
+<li>
+                    <div class="artefacto">
+                        <img src="con6.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Fuego y coraje</b> <br>
+			    Constelación Niv. 6
+                            <ul>
+                                <li><b>Si los personajes en uso utilizan espada ligera, mandoble o lanza y se encuentran en el AdE de<span style="color: red;"> Aventura maravillosa</span>, dichos personajes obtendrán un 15% de Bono de Daño Pyro. Además, serán imbuidos del <span style="color: red;">elemento Pyro.</span></li>
+				<li>Puede ser aumentado hasta Niv. 15.</li>
+
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+</section>
+
+
+
+
+
+        <section>
+            <h3>Presiona la Imagen para ver personaje mas detallado</h3>
+            <img src="img11.jpg" width="300" class="imagen-centrada" onclick="window.location.href='temaInteres.html'">
+
+<section>
+    <h3>Enlaces útiles</h3>
+    <ul>
+        <li><a href="img1.jpg" target="_blank">Ver imagen de Bennett</a></li>
+        <li><a href="#descripcion">Ir a descripción del personaje</a></li>
+        <li><a href="Scarfaceyt6@gmail.com">Enviar correo</a></li>
+        <li><a href="https://youtu.be/FV1UcRVVMAQ" target="_blank">Ver video</a></li>
+    </ul>
+</section>
+<h3>Soundtrack de la nación de Bennett</h3>
+
+<center>
+    <div style="background-color: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
+        <audio id="player" controls>
+            <source id="audio-source" src="aud1.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+    </div>
+    <div>
+        <button onclick="siguienteCancion()" style="background-color: transparent; color: white; border: 2px solid white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Siguiente Canción</button>
+    </div>
+</center>
+
+<script>
+   
+    const canciones = ["aud1.mp3", "aud2.mp3", "aud3.mp3"];
+    let indiceActual = 0;
+
+    function siguienteCancion() {
+       
+        indiceActual++;
+        if (indiceActual >= canciones.length) {
+            indiceActual = 0; 
+        }
+
+        
+        const player = document.getElementById("player");
+        const source = document.getElementById("audio-source");
+        source.src = canciones[indiceActual]; 
+        player.load(); 
+        player.play(); 
+    }
+</script>
+
+<script>
+    function agrandarImagen(id) {
+    const img = document.getElementById(id);
+    if (img) {
+        img.classList.toggle('grande'); 
+    } 
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bennett</title>
+        <style>
+          body {
+                background-color: #01002D;
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-image: url('img3.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+       }
+       header {
+          background-image: url('img1.jpg');
+          background-size: cover;
+          background-position: center center;
+          color: white; padding: 40px 20px;
+          text-align: center;
+          margin-bottom: 20px;
+          background-attachment: fixed; border-radius: 15px;
+                }
+.imagen-centrada {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .imagen-centrada.grande {
+    width: 1000px; 
+}
+
+
+       h1, p {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      img {
+         border-radius: 15px;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        h3 {
+                text-align: center; color: white;
+                margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+            p, ul, li {
+                margin-left: 20px;
+                margin-right: 20px;
+                color: white; font-size: 18px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); font-weight: normal;
+            }
+            .artefacto {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+            .artefacto-img {
+                width: 100px; height: auto;
+                margin-right: 15px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+            .info {
+                color: white;
+                font-size: 18px;
+            }
+    button {
+            background-color: transparent;
+            color: white; 
+            border: 2px solid white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bennett - Personaje pyro 4 estrellas</h1> 
+            <p>Angel Daniel Ibarra Moreno 4B</p> 
+        </header>
+
+        <section>
+            <h3 id="descripcion">Descripcion del personaje</h3>
+            <p>Bennett es un personaje jugable de Genshin Impact, clasificado como un 4 estrellas de tipo Pyro que utiliza una espada. Es un joven aventurero de Mondstadt, conocido por su espíritu optimista y su deseo de convertirse en un gran aventurero. Sin embargo, su vida ha estado marcada por la mala suerte, lo que le ha llevado a ser un personaje entrañable y carismático.</p>
+            <ul>
+                <li><b>Historia:</b> Fue encontrado como un bebé por un anciano aventurero y criado en la Adventurers' Guild de Mondstadt.</li>
+                <li><b>Personalidad:</b> Es amable, apasionado y siempre está dispuesto a ayudar a sus amigos, aunque su mala suerte a menudo le causa problemas.</li>
+            </ul>
+                                                                                               <img id="img2" src="img2.png" alt="Primera Imagen" width="300" class="imagen-centrada" onclick="agrandarImagen('img2')">
+
+    
+            <h3>Mejor Set de Artefactos</h3>
+            <p>Para maximizar el potencial de Bennett, se recomienda el siguiente set de artefactos:</p>
+            <ol>
+                <li>
+                    <div class="artefacto">
+                        <img src="art1.jpg" alt="Artefacto 1" class="artefacto-img">
+                        <div class="info">
+                            <b>Noblesse Oblige (4 piezas)</b>
+                            <ul>
+                                <li><b>Bonificación:</b> Aumenta el daño de la habilidad definitiva en un 20% y otorga un 20% de ataque adicional a los miembros del equipo durante 12 segundos después de usar la habilidad definitiva.</li>
+                                <li><b>Substats recomendados:</b></li>
+                                <ul>
+           <li>Tasa de Crítico</li>
+               <li>Daño Crítico</li>
+                   <li>ATK%</li>
+                     <li>Recarga de Energía</li>
+	 </ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+ 	<li>
+ 	<div class="artefacto">
+ 	<img src="art2.jpg" alt="Artefacto 2" class="artefacto-img">
+	 <div class="info">
+ 	<b>Emblem of Severed Fate (4 piezas)</b>
+ 	<ul>
+ 	<li><b>Bonificación:</b> Aumenta la recarga de energía y el daño de la habilidad definitiva en función de la recarga de energía.</li>
+ 	<li><b>Substats recomendados:</b></li>
+ 	<ul>
+ 	<li>ATK%</li>
+ 	<li>Daño Crítico</li>
+ 	<li>Recarga de Energía</li>
+ 	<li>Maestría Elemental</li>
+ 	</ul>
+ 	</ul>
+ 	</div>
+ 	</div>
+ 	</li>
+ 	 <li>
+        <div class="artefacto">
+          <img src="art3.jpg" alt="Artefacto 3" class="artefacto-img">
+      <div class="info">
+          <b>Crimson Witch of Flames (4 piezas)</b>
+         <ul>
+      <li><b>Bonificación:</b> Aumenta el daño Pyro y el daño de sobrecarga.</li>
+      <li><b>Substats recomendados:</b></li>
+     <ul>
+    <li>ATK%</li>
+       <li>Daño Crítico</li>
+                 <li>Maestría Elemental</li>
+              <li>Recarga de Energía</li>
+            </ul>
+           </ul>
+         </div>
+       </div>
+     </li>
+    </ol>
+   
+                             <img id="img4" src="img4.png" alt="Segunda Imagen" width="300" class="imagen-centrada" onclick="agrandarImagen('img4')">
+
+
+<h3>Top 5 Mejores Armas</h3>
+            <p>Aquí tienes las mejores armas que puedes equipar a Bennett:</p>
+     <ol>
+      <li>
+       <div class="artefacto">
+        <img src="arm1.jpg" alt="Artefacto 1" class="artefacto-img">
+            <div class="info">
+            <b>Aquila Favonia</b>
+            <ul>
+                  <li><b>Tipo:</b>  Espada de 5 estrellas</li>
+		<li><b>Efecto:</b> Aumenta el ATK y proporciona un escudo al recibir daño.</li>
+               </ul>
+             </ul>
+            </div>
+       </div>
+     </li>
+    <li>
+       <div class="artefacto">
+             <img src="arm2.jpg" alt="Artefacto 1" class="artefacto-img">
+          <div class="info">
+              <b>Reflejo de las Tinieblas</b>
+                 <ul>
+                   <li><b>Tipo:</b>  Espada de 5 estrellas</li>
+		<li><b>Efecto:</b> Aumenta el daño de ataque y proporciona un bono de daño elemental.</li>
+                    </ul>
+              </ul>
+           </div>
+</div>
+     </li>
+    <li>
+      <div class="artefacto">
+    <img src="arm3.jpg" alt="Artefacto 1" class="artefacto-img">
+      <div class="info">
+      <b>Espada de Madera</b>
+          <ul>                   <li><b>Tipo:</b>  Espada de 4 estrellas</li>
+		<li><b>Efecto:</b> Aumenta el ATK y proporciona un bono de daño basado en el ATK base.</li>
+                </ul>
+             </ul>
+          </div>
+       </div>
+     </li>
+
+   <li>
+    <div class="artefacto">
+     <img src="arm4.jpg" alt="Artefacto 1" class="artefacto-img">
+    <div class="info">
+       <b>Espina de Hierro</b>
+       <ul>
+         <li><b>Tipo:</b>  Espada de 4 estrellas</li>
+		<li><b>Efecto:</b> Aumenta la maestría elemental y proporciona un daño adicional a los enemigos afectados por reacciones elementales.</li>
+             </ul>
+         </ul>
+        </div>
+      </div>
+    </li>
+
+   <li>
+       <div class="artefacto">
+          <img src="arm5.jpg" alt="Artefacto 1" class="artefacto-img">
+        <div class="info">
+          <b>Espada Surcacielos</b>
+         <ul>
+          <li><b>Tipo:</b>  Espada de 3 estrellas</li>
+	<li><b>Efecto:</b> Aumenta la recarga de energía y el ATK.</li>
+         </ul>
+        </ul>
+     </div>
+   </div>
+ </li>
+
+
+            </ol>
+        </section>
+
+        <section>
+            <h3>Presiona la Imagen para ver personaje mas detallado</h3>
+            <img src="img5.jpg" width="300" class="imagen-centrada" onclick="window.location.href='bennett.html'">
+
+<section>
+    <h3>Enlaces útiles</h3>
+    <ul>
+        <li><a href="img1.jpg" target="_blank">Ver imagen de Bennett</a></li>
+        <li><a href="#descripcion">Ir a descripción del personaje</a></li>
+        <li><a href="Scarfaceyt6@gmail.com">Enviar correo</a></li>
+        <li><a href="https://youtu.be/FV1UcRVVMAQ" target="_blank">Ver video</a></li>
+    </ul>
+</section>
+<h3>Soundtrack de la nación de Bennett</h3>
+
+<center>
+    <div style="background-color: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
+        <audio id="player" controls>
+            <source id="audio-source" src="aud1.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+    </div>
+    <div>
+        <button onclick="siguienteCancion()" style="background-color: transparent; color: white; border: 2px solid white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Siguiente Canción</button>
+    </div>
+</center>
+
+<script>
+   
+    const canciones = ["aud1.mp3", "aud2.mp3", "aud3.mp3"];
+    let indiceActual = 0;
+
+    function siguienteCancion() {
+       
+        indiceActual++;
+        if (indiceActual >= canciones.length) {
+            indiceActual = 0; 
+        }
+
+        
+        const player = document.getElementById("player");
+        const source = document.getElementById("audio-source");
+        source.src = canciones[indiceActual]; 
+        player.load(); 
+        player.play(); 
+    }
+</script>
+
+<script>
+    function agrandarImagen(id) {
+    const img = document.getElementById(id);
+    if (img) {
+        img.classList.toggle('grande'); 
+    } 
+}
+
+
+</script>
+
+  </body>
+</html>
